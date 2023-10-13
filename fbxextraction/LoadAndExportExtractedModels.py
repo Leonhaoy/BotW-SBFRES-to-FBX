@@ -35,10 +35,10 @@ def loadAndExportModels():
         CustomFileUtils.offerToDeleteAllInSensitiveDirectory(fbxDatabase)
 
     # Get the path to the custom script.
-    bfresToFBXMAXScript = os.path.join(fbxExtractionPath, "BFRES to FBX 2.ms")
+    bfresToFBXMAXScript = os.path.join(fbxExtractionPath, "BFRES to FBX 3.ms")
 
     # Ask the user for the 3DSMax executable location.
-    maxExecutableLocation = "C:\\Program Files\\Autodesk\\3ds Max 2016\\3dsmax.exe"
+    maxExecutableLocation = "C:\\Program Files\\Autodesk\\3ds Max 2022\\3dsmax.exe"
     if not os.path.exists(maxExecutableLocation):
         maxExecutableLocation = input("Input 3DSMax executable path: ")
 

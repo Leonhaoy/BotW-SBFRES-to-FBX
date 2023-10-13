@@ -17,9 +17,9 @@
   </StatisticsGrp>
   <IncludeGrp UIH="0" UID="0" UIG="1" UIX="1" UIP="0" lbENU="Include">
     <Geometry UIH="0" UID="0" UIG="1" UIX="0" UIP="0" lbENU="Geometry">
-      <SmoothingGroups UIH="0" UID="0" UIG="0" UIBG="0" lbENU="Smoothing Groups" dt="Bool" v="0"/>
+      <SmoothingGroups UIH="0" UID="0" UIG="0" UIBG="0" lbENU="Smoothing Groups" dt="Bool" v="1"/>
       <GeomNormalPerPoly UIH="0" UID="0" UIG="0" UIBG="0" lbENU="Split per-vertex Normals" dt="Bool" v="0"/>
-      <TangentsandBinormals UIH="0" UID="0" UIG="0" UIBG="0" lbENU="Tangents and Binormals" dt="Bool" v="0"/>
+      <TangentsandBinormals UIH="0" UID="0" UIG="0" UIBG="0" lbENU="Tangents and Binormals" dt="Bool" v="1"/>
       <SmoothMesh UIH="0" UID="0" UIG="0" UIBG="0" lbENU="TurboSmooth" dt="Bool" v="1"/>
       <Instances UIH="0" UID="0" UIG="0" UIBG="0" lbENU="Preserve Instances" dt="Bool" v="0"/>
       <SelectionSet UIH="0" UID="0" UIG="0" UIBG="0" lbENU="Selection Sets" dt="Bool" v="0"/>
@@ -83,7 +83,7 @@
     <UnitsGrp UIH="0" UID="0" UIG="1" UIX="1" UIP="0" lbENU="Units">
       <TotalUnitsScale UIH="0" UID="0" UIG="0" lbENU="Total Units Scale" dt="TextLine"/>
       <DynamicScaleConversion UIH="0" UID="0" UIG="0" UIBG="0" lbENU="Automatic" dt="Bool" v="0"/>
-      <UnitsSelector UIH="0" UID="0" UIG="0" lbENU="Scene units converted to" dt="Enum" enumSelected="Meters" v="3" enumItem_0="Millimeters" enumItem_1="Centimeters" enumItem_2="Decimeters" enumItem_3="Meters" enumItem_4="Kilometers" enumItem_5="Inches" enumItem_6="Feet" enumItem_7="Yards" enumItem_8="Miles"/>
+      <UnitsSelector UIH="0" UID="0" UIG="0" lbENU="Scene units converted to" dt="Enum" enumSelected="Centimeters" v="1" enumItem_0="Millimeters" enumItem_1="Centimeters" enumItem_2="Decimeters" enumItem_3="Meters" enumItem_4="Kilometers" enumItem_5="Inches" enumItem_6="Feet" enumItem_7="Yards" enumItem_8="Miles"/>
     </UnitsGrp>
     <AxisConvGrp UIH="0" UID="0" UIG="1" UIX="0" UIP="0" lbENU="Axis Conversion">
       <UpAxis UIH="0" UID="0" UIG="0" lbENU="Up Axis" dt="Enum" enumSelected="Y-up" v="0" enumItem_0="Y-up" enumItem_1="Z-up"/>
