@@ -38,6 +38,7 @@
     <zoom_modifier_multiplier>2</zoom_modifier_multiplier>
     <fov>0.524</fov>
     <render_depth>100000</render_depth>
+    <enable_vSync>False</enable_vSync>
     <render_background>True</render_background>
     <back_gradient_top>#1A1A1A</back_gradient_top>
     <back_gradient_bottom>#4D4D4D</back_gradient_bottom>
@@ -112,6 +113,7 @@
     <shieldBubble_color>Red</shieldBubble_color>
     <absorbBubble_color>SteelBlue</absorbBubble_color>
     <wtSlowdownBubble_color>#9A479A</wtSlowdownBubble_color>
+    <loadAndRenderATKD>False</loadAndRenderATKD>
     <hitbox_kb_colors>
       <color>#007D34</color>
       <color>#FFB300</color>
@@ -148,6 +150,7 @@
     </param_dir>
   </ETC>
   <DISCORDSETTINGS>
+    <discord_enabled>True</discord_enabled>
     <image_key_mode>0</image_key_mode>
     <user_image_key>forge</user_image_key>
     <use_user_mod_name>False</use_user_mod_name>

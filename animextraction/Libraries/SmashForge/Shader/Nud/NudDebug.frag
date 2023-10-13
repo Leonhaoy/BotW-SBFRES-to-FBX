@@ -47,54 +47,51 @@ uniform int hasDualNormal;
 uniform int hasSoftLight;
 uniform int hasCustomSoftLight;
 
-// Da Flags
-uniform uint flags;
-uniform int isTransparent;
-
 uniform vec3 lightSetColor;
-uniform int isStage;
-uniform int renderStageLighting;
 
 uniform int uvChannel;
 uniform int debug1;
 uniform int debug2;
 uniform int drawWireFrame;
 
-// NU_ Material Properties
-uniform vec4 colorOffset;
-uniform vec4 aoMinGain;
-uniform vec4 fresnelColor;
-uniform vec4 specularColor;
-uniform vec4 specularColorGain;
-uniform vec4 diffuseColor;
-uniform vec4 colorGain;
-uniform vec4 finalColorGain;
-uniform vec4 reflectionColor;
-uniform vec4 fogColor;
-uniform vec4 effColorGain;
-uniform vec4 zOffset;
+uniform MaterialProperties
+{
+    vec4 colorOffset;
+    vec4 aoMinGain;
+    vec4 fresnelColor;
+    vec4 specularColor;
+    vec4 specularColorGain;
+    vec4 diffuseColor;
+    vec4 characterColor;
+    vec4 colorGain;
+    vec4 finalColorGain;
+    vec4 finalColorGain2;
+    vec4 finalColorGain3;
+    vec4 reflectionColor;
+    vec4 fogColor;
+    vec4 effColorGain;
+    vec4 zOffset;
+    vec4 colorSamplerUV;
+    vec4 colorSampler2UV;
+    vec4 colorSampler3UV;
+    vec4 normalSamplerAUV;
+    vec4 normalSamplerBUV;
 
-// NU_ material params
-uniform vec4 fresnelParams;
-uniform vec4 specularParams;
-uniform vec4 reflectionParams;
-uniform vec4 fogParams;
-uniform vec4 normalParams;
-uniform vec4 angleFadeParams;
-uniform vec4 dualNormalScrollParams;
-uniform vec4 alphaBlendParams;
-uniform vec4 softLightingParams;
-uniform vec4 customSoftLightParams;
+    vec4 fresnelParams;
+    vec4 specularParams;
+    vec4 reflectionParams;
+    vec4 fogParams;
+    vec4 normalParams;
+    vec4 angleFadeParams;
+    vec4 dualNormalScrollParams;
+    vec4 alphaBlendParams;
+    vec4 softLightingParams;
+    vec4 customSoftLightParams;
+    vec4 effUniverseParam;
+};
 
 // render settings
-uniform int renderDiffuse;
-uniform int renderSpecular;
-uniform int renderFresnel;
-uniform int renderReflection;
 uniform int renderType;
-uniform int renderLighting;
-uniform int renderVertColor;
-uniform int renderNormal;
 uniform int useNormalMap;
 
 uniform int renderR;
@@ -103,54 +100,12 @@ uniform int renderB;
 uniform int renderAlpha;
 uniform int alphaOverride;
 
-uniform float diffuseIntensity;
-uniform float ambientIntensity;
-uniform float specularIntensity;
-uniform float fresnelIntensity;
-uniform float reflectionIntensity;
-
 // character lighting
 uniform vec3 difLightColor;
 uniform vec3 ambLightColor;
 uniform vec3 difLightDirection;
-uniform vec3 fresGroundColor;
-uniform vec3 fresSkyColor;
-uniform vec3 specLightColor;
-uniform vec3 specLightDirection;
-uniform vec3 refLightColor;
 
-// stage light 1
-uniform int renderStageLight1;
-uniform vec3 stageLight1Color;
-uniform vec3 stageLight1Direction;
-
-// stage light 2
-uniform int renderStageLight2;
-uniform vec3 stageLight2Color;
-uniform vec3 stageLight2Direction;
-
-// stage light 3
-uniform int renderStageLight3;
-uniform vec3 stageLight3Color;
-uniform vec3 stageLight3Direction;
-
-// stage light 4
-uniform int renderStageLight4;
-uniform vec3 stageLight4Color;
-uniform vec3 stageLight4Direction;
-
-// light_set fog
-uniform int renderFog;
 uniform vec3 stageFogColor;
-
-uniform mat4 mvpMatrix;
-uniform vec3 lightPosition;
-uniform vec3 lightDirection;
-uniform sampler2D shadowMap;
-
-uniform int selectedBoneIndex;
-uniform vec3 NSC;
-uniform float elapsedTime;
 
 uniform int drawSelection;
 

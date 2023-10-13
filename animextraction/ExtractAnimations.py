@@ -53,7 +53,7 @@ def extractAnimations():
 				print(sbfresFile + " has already been extracted")
 				continue
 			animDatabaseAnimFile = os.path.join(animDatabaseSubPath, sbfresFile)
-			CommandLineUtils.call(CommandLineUtils.quoted(smashForgeExecutableLoc), [CommandLineUtils.quoted(animDatabaseAnimFile)])
+			CommandLineUtils.call(CommandLineUtils.quoted(smashForgeExecutableLoc), [CommandLineUtils.quoted(animDatabaseAnimFile), "AutoGenerate"])
 			for animExtractedFile in os.listdir(animFolderLoc): 
 				shutil.move(os.path.join(animFolderLoc, animExtractedFile), animDatabaseSubPath)
 				print("Moved " + animExtractedFile)

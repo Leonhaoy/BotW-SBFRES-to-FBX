@@ -65,9 +65,16 @@ select -hierarchy;
 // Import the animation file.  
 file -import -type "animImport"  -ignoreVersion -ra true -mergeNamespacesOnClash false -namespace "{2}" -options "targetTime=4;copies=1;option=replace;pictures=0;connect=0;"  -pr  -importTimeRange "combine" "{3}";
 
+setAttr "Root.jointOrientX" 0;
+setAttr "Root.rotateX" 0;
+
 // Select the skeleton hierarchy again
 select -r Root ;
 select -hierarchy;
+
+selectKey -add -k -t 0.4;
+copyKey;
+pasteKey -time 0.8 -float 1 -option replace -copies 1 -connect 0 -timeOffset 0 -floatOffset 0 -valueOffset 0;
 
 // Export the skeleton selection
 file -force -options "v=0;" -typ "FBX export" -pr -es "{4}";
